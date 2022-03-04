@@ -1,0 +1,358 @@
+/* Current task START ---------- */
+
+form {
+    background-color: rgb(161, 201, 236);
+    padding: 20px;
+    width: 500px;
+    text-align: right;
+}
+
+fieldset {
+    padding: 0 7px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    margin: 15px 0 0;
+}
+
+.radio-fieldset {
+    padding-top: 7px;
+    text-align: center;
+}
+
+legend {
+    padding: 0 5px;
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 0.7rem;
+}
+
+table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0 3px 0;
+}
+
+.radio-td {
+    text-align: left;
+}
+
+.select {
+    width: 170px;
+    height: 36px;
+    display: inline;
+    padding-left: 10px;
+}
+
+.select-td {
+    padding-top: 20px;
+    text-align: right;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    height: 36px;
+    font-size: 1rem;
+    padding: 0 0 0 35px;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position-x: 8px;
+    background-position-y: center;
+    background-color: rgb(235, 235, 235);
+    color: rgba(0, 26, 82, 0.8);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    background-color: white;
+}
+
+textarea {
+    height: 100px;
+    padding: 10px;
+    font-family: sans-serif;
+    resize: none;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+    margin-top: -1px;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    color: rgb(0, 0, 0, 0.5);
+    margin: 10px 5px 5px;
+    text-align: left;
+}
+
+.radio-label {
+    display: inline;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.delivery-label {
+    display: inline;
+    margin-right: 5px;
+}
+
+::placeholder {
+    font-size: 0.8rem;
+}
+
+button {
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+    padding: 7px 20px;
+    border: 0px;
+    margin: 15px 5px 0;
+}
+
+button.right {
+    margin-right: 29px;
+}
+
+.person {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("../img/person.png");
+}
+
+.address {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("../img/home.png");
+}
+
+.phone {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("../img/phone.png");
+}
+
+.email {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("../img/email.png");
+}
+
+.login {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("../img/login.png");
+}
+
+.pass {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("../img/pass.png");
+}
+/* Current task END ------------ */
+/* html START -------------------------------------------------------------- */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+div,
+img,
+input,
+fieldset,
+table,
+textarea {
+    box-sizing: border-box;
+}
+
+a {
+    color: lightseagreen;
+}
+
+/* .container START ---------------------------------------------- */
+
+div,
+header,
+nav,
+main,
+footer,
+aside {
+    box-sizing: border-box;
+}
+
+.flex-direction-row {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-direction-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+}
+
+/* .header START --------------------------------------- */
+
+.header {
+    background: lightgray;
+    width: 100vw;
+    height: 150px;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 50px;
+}
+
+.title {
+    font-size: 40px;
+    height: fit-content;
+}
+
+.nav {
+    /* navigation code */
+}
+
+/* .header END ----------------------------------------- */
+/* .container-main START ------------------------------- */
+
+.container-main {
+    width: 1000px;
+    margin-top: 20px;
+    flex: 1;
+}
+
+/* .main START ------------------------------- */
+.main {
+    flex-grow: 3;
+    flex-basis: 0;
+}
+/* .article START ------------------ */
+
+.article {
+    flex-grow: 1;
+    display: flex;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-container {
+}
+
+/* .article END -------------------- */
+/* .main END --------------------------------- */
+/* .sidebar START ---------------------------- */
+
+.sidebar .subhead {
+    margin: 0px;
+}
+
+.sidebar {
+    flex-grow: 1;
+    flex-basis: 0;
+    background: white;
+    height: fit-content;
+    padding: 15px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+/* .subhead START ------------------ */
+
+.subhead {
+    background-color: #281b2d;
+    color: #fcd801;
+    font-size: 36px;
+    padding: 20px;
+    border-bottom: 5px solid lightseagreen;
+    margin-top: 0;
+}
+
+.white-text {
+    color: white;
+}
+
+/* .subhead END -------------------- */
+/* .sidebar-nav START -------------- */
+
+.sidebar-nav ol {
+    margin-top: 35px;
+    list-style-position: inside;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.sidebar-nav ol li {
+    margin-bottom: 20px;
+}
+
+.sidebar-nav ol li a {
+    text-decoration: none;
+}
+
+.sidebar-nav ol li a:hover {
+    text-decoration: underline;
+}
+
+/* .sidebar-nav END ---------------- */
+/* .sidebar END ------------------------------ */
+/* .container-main END --------------------------------- */
+/* .footer START --------------------------------------- */
+
+.footer {
+    width: 100vw;
+    height: 100px;
+    column-gap: 30px;
+    font-size: 18px;
+    color: rgb(121, 121, 121);
+    align-items: center;
+}
+
+/* .footer-logo START ------------------------ */
+
+.footer-logo {
+    height: 40px;
+}
+
+/* .footer-logo END -------------------------- */
+/* .footer END ----------------------------------------- */
+/* .container END ------------------------------------------------- */
+/* html END ---------------------------------------------------------------- */
