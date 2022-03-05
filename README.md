@@ -10,7 +10,7 @@ The remaining slides in the presentation I will discuss in next class.
 
 ## Description
 
-Parsing an html form with JavaScript and DataForm ().  
+Parsing an html form with JavaScript and FormData().  
 [Inspiration](https://www.learnwithjason.dev/blog/get-form-values-as-json)
 
 ## Result
