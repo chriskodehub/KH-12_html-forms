@@ -8,4 +8,12 @@ GitExtensions.settings
 
 ## END GitExtension ##
 
+### Visual Studio Code ###
+### https://code.visualstudio.com/
+
+# Config file
+.vscode
+
+## END GitExtension ##
+
 ########## END Settings of each project ##########

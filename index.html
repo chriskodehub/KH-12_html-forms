@@ -26,16 +26,16 @@
                     <div class="article-container">
                         <h1>Customer details</h1>
 
-                        <form>
+                        <form method="post">
                             <table>
                                 <tr>
                                     <td class="radio-td" width="50%">
                                         <fieldset class="radio-fieldset">
                                             <legend>Client type</legend>
-                                            <input type="radio" name="client-type" id="private" value="private"
+                                            <input type="radio" name="client-type" id="private" value="Private"
                                                 required>
                                             <label for="private" class="radio-label">Private</label>
-                                            <input type="radio" name="client-type" id="firma" value="firma">
+                                            <input type="radio" name="client-type" id="firma" value="Firma">
                                             <label for="firma" class="radio-label">Firma</label>
                                         </fieldset>
                                     </td>
@@ -43,8 +43,8 @@
                                         <label for="delivery-type" class="delivery-label">Delivery</label>
                                         <select name="delivery-type" id="delivery-type" class="select" required>
                                             <option value="" disabled selected>-- choose --</option>
-                                            <option value="normal">Normal</option>
-                                            <option value="express">Express</option>
+                                            <option value="Normal">Normal</option>
+                                            <option value="Express">Express</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -63,7 +63,7 @@
                                 <tr>
                                     <td>
                                         <label for="phone">Phone</label>
-                                        <input type="text" name="phone" id="phone" class="phone">
+                                        <input type="tel" name="phone" id="phone" class="phone">
                                     </td>
                                     <td>
                                         <label for="email">E-mail</label>
@@ -102,7 +102,7 @@
                                                 placeholder="Your e-mail">
                                         </td>
                                         <td>
-                                            <label for="pass">Town</label>
+                                            <label for="pass">Password</label>
                                             <input type="password" name="pass" id="pass" class="pass"
                                                 placeholder="Min. 12 characters">
                                         </td>
@@ -110,9 +110,9 @@
                                 </table>
                             </fieldset>
                             <label for="info">Additional information about the order</label>
-                            <textarea name="info" id="info"></textarea>
+                            <textarea name="info" id="info" wrap="hard"></textarea>
                             <button type="reset">Cancel</button>
-                            <button type="submit" class="right">Order</button>
+                            <button type="submit" class="right" id="order">Order</button>
                         </form>
                     </div>
                 </article>
@@ -121,10 +121,10 @@
         </div>
         <footer class="footer flex-direction-row">
             Inspired by:
-            <a href="https://jobloop.no"><img class="footer-logo" src="img/logo-jobloop.png" alt="Logo Jobloop"
+            <a href="https://jobloop.no/"><img class="footer-logo" src="img/logo-jobloop.png" alt="Logo Jobloop"
                     style="height: 50px;"></a>
-            <a href="https://jobloop.no"><img class="footer-logo" src="img/logo-podium.png" alt="Logo Podium"></a>
-            <a href="https://jobloop.no"><img class="footer-logo" src="img/logo-nav.png" alt="Logo NAV"></a>
+            <a href="https://www.podium.no/"><img class="footer-logo" src="img/logo-podium.png" alt="Logo Podium"></a>
+            <a href="https://www.nav.no/"><img class="footer-logo" src="img/logo-nav.png" alt="Logo NAV"></a>
         </footer>
     </div>
     <script src="js/index.js"></script>

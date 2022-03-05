@@ -1,10 +1,14 @@
 /* Current task START ---------- */
 
+h1{
+    text-align: center;
+}
+
 form {
     background-color: rgb(161, 201, 236);
     padding: 20px;
     width: 500px;
-    text-align: right;
+    text-align: center;
 }
 
 fieldset {
@@ -53,7 +57,7 @@ td {
 
 input[type="text"],
 input[type="password"],
-input[type="email"],
+input[type="email"],input[type="tel"],
 select,
 textarea {
     border: 1px solid black;
@@ -74,7 +78,7 @@ textarea {
 
 input[type="text"]:focus,
 input[type="password"]:focus,
-input[type="email"]:focus,
+input[type="email"]:focus,input[type="tel"]:focus,
 select:focus,
 textarea:focus {
     background-color: white;
@@ -127,10 +131,6 @@ button {
     margin: 15px 5px 0;
 }
 
-button.right {
-    margin-right: 29px;
-}
-
 .person {
     background-image: linear-gradient(
             rgba(255, 255, 255, 0.4),
@@ -178,8 +178,29 @@ button.right {
         ),
         url("../img/pass.png");
 }
+
+table.summary {
+    border: 2px solid black;
+}
+
+table.summary td{
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+table.summary td.field-name {
+    color:rgb(2, 55, 172);
+    text-align: right;
+    font-weight: bold;
+}
+
 /* Current task END ------------ */
 /* html START -------------------------------------------------------------- */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     font-family: sans-serif;
@@ -187,12 +208,18 @@ body {
     font-size: 16px;
 }
 
+p {
+    word-break: break-all;
+    white-space: normal;
+}
+
 div,
 img,
 input,
 fieldset,
 table,
-textarea {
+textarea,
+header {
     box-sizing: border-box;
 }
 
@@ -230,18 +257,18 @@ aside {
 
 .header {
     background: lightgray;
-    width: 100vw;
-    height: 150px;
+    width: 100%;
     align-items: center;
+    padding: 15px 0;
 }
 
 .logo {
-    height: 100px;
-    margin-right: 50px;
+    height: 50px;
+    margin-right: 30px;
 }
 
 .title {
-    font-size: 40px;
+    font-size: 20px;
     height: fit-content;
 }
 
@@ -344,6 +371,7 @@ aside {
     font-size: 18px;
     color: rgb(121, 121, 121);
     align-items: center;
+    margin-top: 40px;
 }
 
 /* .footer-logo START ------------------------ */
