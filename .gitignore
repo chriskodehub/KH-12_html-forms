@@ -16,4 +16,12 @@ GitExtensions.settings
 
 ## END Visual Studio Code ##
 
+### PhpStorm ###
+### https://code.visualstudio.com/
+
+# Config file
+.idea
+
+## END Visual Studio Code ##
+
 ########## END Settings of each project ##########
