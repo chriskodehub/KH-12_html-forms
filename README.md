@@ -1,7 +1,7 @@
 # HTML forms
 
-[Source code](https://github.com/chriskodehub/KH-11_javascript-methodically-looping)  
-[Live demo](https://chriskodehub.github.io/KH-11_javascript-methodically-looping/)  
+[Source code](https://github.com/chriskodehub/KH-12_html-forms)  
+[Live demo](https://chriskodehub.github.io/KH-12_html-forms/)  
 
 ## Oppgave
 
